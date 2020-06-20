@@ -1,4 +1,4 @@
-@smoke_test1
+@smoke_test
   Feature: Authorized user can see module
 
 
@@ -15,3 +15,7 @@
       |posmanager      |Discuss, Calendar, Notes, Contacts, CRM, Sales, Website, Point of Sale, Purchases, Inventory, Manufacturing, Repairs, Project, Events, Surveys, Employees, More|
       |salesmanager    |Discuss, Calendar, Notes, Contacts, CRM, Sales, Website, Point of Sale, Purchases, Inventory, Repairs, Invoicing, Email Marketing, Events, Employees, Leaves, More|
       |inventorymanager|Discuss, Calendar, Notes, Contacts, Website, Inventory, Manufacturing, Repairs, Invoicing, Email Marketing, Employees, Leaves, Expenses, Lunch, More|
+
+
+
+##    mvn clean test -Dcucumber.options="--tags @smoke_test"
