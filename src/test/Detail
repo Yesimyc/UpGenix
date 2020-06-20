@@ -1,0 +1,58 @@
+
+
+
+
+
+//    @FindBy(css = "[accesskey='c']")
+//    public WebElement createManufacturingOrderButton;
+//
+//    @FindBy(xpath = "//div[@name='product_id']//div//input")
+//    public WebElement productInputBox;
+//
+//    @FindBy(xpath = "(//a[contains(text(),'Search More...')])")
+//    public WebElement searchMoreProduct;
+//
+//    @FindBy(xpath = "(//input[@class='o_searchview_input'])[2]")
+//    public WebElement productSearch;
+//
+//    @FindBy(xpath = "(//tbody[@class='ui-sortable'])[3]//tr[1]//td[2]")
+//    public WebElement productName;
+//
+//    @FindBy(css = "[name='product_qty']")
+//    public WebElement productQuantity;
+//
+//    @FindBy(xpath = "(//div[@class='o_input_dropdown'])[3]")
+//    public WebElement billOfMaterialInputBox;
+//
+//    @FindBy(xpath = "(//a[contains(text(),'Create and Edit')])[2]")
+//    public WebElement billOfMaterialCreateAndEditBox;
+//
+//    @FindBy(xpath = "(//input[@name='product_qty'])[2]")
+//    public WebElement billOfMaterialQuantity;
+//
+//    @FindBy(linkText = "Add an item")
+//    public WebElement addAnItemBill;
+//
+//    @FindBy(xpath = "(//input[@class='o_input ui-autocomplete-input'])[1]")
+//    public WebElement addFirstMaterial;
+//    @FindBy(xpath = "(//ul[@id='ui-id-2300'] )//li[1]")
+//    public WebElement createMaterial;
+//    @FindBy(xpath = "//tbody[@class='ui-sortable']//tr//td[2]//div//div//input")
+//    public WebElement addMaterialToProduct;
+//    @FindBy(xpath = "(//button[@class='btn btn-sm btn-primary'][@type='button'] )[1]")
+//    public WebElement SaveAddFirstMaterialToProduct;
+//    @FindBy(xpath = "//td[@class='o_data_cell o_list_number o_required_modifier']//input")
+//    public WebElement quantityMaterial;
+//
+//    @FindBy(xpath = "(//button[@class='btn btn-sm btn-primary'])")
+//    public WebElement saveBillOfMaterial;
+//
+//    @FindBy(xpath = "(//button[@class='btn btn-primary btn-sm o_form_button_save'])")
+//    public WebElement saveManufacturingOrderButton;
+//
+//
+//
+//    public void clickCreateOrder(){
+//        createManufacturingOrderButton.click();
+//    }
+//}

@@ -59,6 +59,7 @@
         | expensesmanager |
         | inventorymanager|
 
+
     @login_with_credentials_ddt
     Scenario Outline: DDT example with credentials, Login as <username>
       Given user is on the landing page
@@ -83,5 +84,14 @@
     |imm22@info.com             |inventorymanager |
     |imm23@info.com             |inventorymanager |
     |imm24@info.com             |inventorymanager |
+
+
+    @login_with_Excel_table
+    Scenario: Excel Table example
+      Given user is on the landing page
+      Then user clicks login button
+      And user verifies that "Best solution for startups" link displayed
+      Then user enters "<username>" username and "<password>" password
+
 
 

@@ -57,7 +57,8 @@ public class LoginPageStepDefinitions {
 
     @When("user verifies that {string} page subtitle is displayed")
     public void user_verifies_that_page_subtitle_is_displayed(String string) {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+        BrowserUtils.wait(3);
+       // driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
       Assert.assertEquals("#Inbox",discussPage.inboxText.getText());
         System.out.println(discussPage.inboxText.getText());
         System.out.println("#Inbox");
@@ -65,7 +66,7 @@ public class LoginPageStepDefinitions {
     }
     @When("user enters {string} username and {string} password")
     public void user_enters_username_and_password(String string, String string2) {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+      //  driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
         loginPage.login(string,string2);
 
     }
@@ -94,3 +95,17 @@ public class LoginPageStepDefinitions {
 
 
 }
+//   public static void main(String[] args) {
+////        ExcelUtil qa2 = new ExcelUtil("vytrack_testusers.xlsx", "QA2-short");
+////        System.out.println("Row count: " + qa2.rowCount());
+////        System.out.println(qa2.getColumnsNames());
+////        //map is a data structure
+////        //in map, every value is referenced by key
+////        //when we retrieve data from map, we don't specify index, we specify key name
+////        //keys must be unique
+////        //keys are represented by column names
+////        //like in properties file key=value
+////        for (Map<String, String> map : qa2.getDataList()) {
+////            System.out.println(map.get("username"));
+////        }
+////    }

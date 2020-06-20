@@ -1,7 +1,10 @@
 package com.upgenix.pages;
 
+import com.upgenix.utilities.BrowserUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.util.List;
 
 public class DiscussPage extends BasePage {
 
@@ -10,4 +13,12 @@ public class DiscussPage extends BasePage {
 
     @FindBy(linkText = "Events")
     public WebElement eventsModule;
+
+    @FindBy(xpath = "//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li")
+    public List<WebElement> listOfModule;
+
+
+    public List<String> getListOfModule(){
+        return BrowserUtils.getListOfString(listOfModule);
+    }
 }
