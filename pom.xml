@@ -95,7 +95,7 @@
 
     <profiles>
         <profile>
-            <id>RegressionRunner</id>
+            <id>CukesRunner</id>
             <build>
                 <plugins>
                     <plugin>
@@ -109,7 +109,7 @@
                             <threadCountMethods>10</threadCountMethods>
 
                             <includes>
-                                <include>**/RegressionRunner.java</include>
+                                <include>**/CukesRunner.java</include>
                             </includes>
                             <testFailureIgnore>true</testFailureIgnore>
                         </configuration>
