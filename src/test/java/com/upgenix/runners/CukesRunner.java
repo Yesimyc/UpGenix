@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         glue = "com/upgenix/step_definitions",
         dryRun = false,
 
-        tags = "@smoke_test",
+        tags = " @smoke_test",
         plugin = {"html:target/default-cucumber-reports",
                 "json:target/cucumber.json",
                 "rerun:target/rerun.txt"

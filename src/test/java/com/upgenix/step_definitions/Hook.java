@@ -16,7 +16,7 @@ public class Hook {
         System.out.println("##############################");
         System.out.println("Test setup!");
 
-        Driver.get().manage().window().maximize();
+        //Driver.get().manage().window().maximize();
     }
 
     @After
