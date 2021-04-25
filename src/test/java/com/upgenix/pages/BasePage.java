@@ -18,7 +18,8 @@ public WebElement loginModule;
 @FindBy(linkText = "Best solution for startups")
 public WebElement pageTitle;
 
-public BasePage(){
+public BasePage()
+{
     PageFactory.initElements(Driver.get(), this);
 }
 

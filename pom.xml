@@ -200,7 +200,7 @@
 
                             <parallel>methods</parallel>
                             <perCoreThreadCount>false</perCoreThreadCount>
-                            <threadCountMethods>2</threadCountMethods>
+                            <threadCountMethods>10</threadCountMethods>
 
                             <includes>
                                 <include>**/RegressionRunner.java</include>
@@ -221,12 +221,13 @@
                                 </goals>
                                 <configuration>
                                     <projectName>Cucumber HTML Reports</projectName>
-                                    <outputDirectory>${project.build.directory}/regression</outputDirectory>
+                                    <outputDirectory>${project.build.directory}</outputDirectory>
                                     <inputDirectory>${project.build.directory}</inputDirectory>
                                     <jsonFiles>
                                         <param>**/cucumber*.json</param>
                                     </jsonFiles>
                                 </configuration>
+
                             </execution>
                         </executions>
                     </plugin>
